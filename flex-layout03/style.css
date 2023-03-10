@@ -1,8 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-*, :after, :before { box-sizing: border-box; }
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
 
 body {
-	font-family: sans-serif;
+    font-family: sans-serif;
 }
 
 
@@ -10,10 +14,34 @@ body {
     padding: 20px;
 }
 
-.horni { background-color:#f1c40f ;}
-.prvni { background-color: #2ecc71;}
-.druhy { background-color: #e74c3c;}
-.treti { background-color: #8e44ad;}
+.horni {
+    background-color: #f1c40f;
+}
+
+.prvni {
+    background-color: #2ecc71;
+    flex: 1 1 0;
+    /*flex je sloučení flex-grow, flex-shrink a nakonec flex-basis*/
+}
+
+.druhy {
+    background-color: #e74c3c;
+    flex: 1 1 0;
+}
+
+.treti {
+    background-color: #8e44ad;
+    flex: 1 1 0;
+}
 
 /* ---------------------------------------------------- */
 
+.kontejner {
+    display: flex;
+    flex-direction: column;
+}
+
+.sloupce {
+    display: flex;
+
+}
